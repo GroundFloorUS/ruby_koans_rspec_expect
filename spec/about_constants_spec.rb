@@ -2,10 +2,11 @@ require 'spec_helper'
 
 C = "top level"
 
-describe "Constants" do
-
+class NestedConstant
   C = "nested"
+end
 
+describe "Constants" do
   it "should demonstrate nested_constants_may_also_be_referenced_with_relative_paths" do
     expect(C).to eql __
   end

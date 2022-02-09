@@ -155,7 +155,7 @@ class KoansFormatter < RSpec::Core::Formatters::BaseFormatter
 
   def find_interesting_lines(backtrace)
     backtrace.reject { |line|
-      line =~ /rspec-expectations|rspec-core|bin/
+      line =~ /gems|rspec-expectations|rspec-core|bin/
     }
   end
 
